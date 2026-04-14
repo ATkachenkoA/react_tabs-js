@@ -17,7 +17,7 @@ export const Tabs = ({ tabs, activeTabId, onTabSelected }) => {
                 onClick={e => {
                   e.preventDefault();
 
-                  if (tab.id !== activeTabId) {
+                  if (tab.id !== activeTab.id) {
                     onTabSelected(tab.id);
                   }
                 }}
